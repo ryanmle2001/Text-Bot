@@ -25,7 +25,6 @@ def good_morning_message():
                            body=quote
                            )
 
-
 def send_message(quotes_list):
     account = twilio_account
     token = twilio_token
@@ -49,9 +48,7 @@ schedule.every().day.at("05:00").do(send_message, kdrama_quotes)
 
 # testing
 # schedule.every().day.at("13:55").do(send_message, romantic_quotes)
-schedule.every().day.at("16:16").do(good_morning_message)
-schedule.every().day.at("16:16").do(good_morning_message)
-schedule.every().day.at("16:16").do(good_morning_message)
+schedule.every().day.at("21:19").do(good_morning_message)
 
 while True:
     # Checks whether a scheduled task
